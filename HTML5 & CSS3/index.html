@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Commerce Site</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+   
+    <!-- google API -->
+    <head>
+        <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+        <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+      </head>
+      
+
+</head>
+<body>
+    <!-- Header -->
+    <header class="site-header">
+        <div class="logo">LAITI</div>
+
+
+        <nav class="navigation">
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="#">Shop</a></li>      
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#" class="cart">Cart (0)</a></li>
+                <li><a href="#"id="register-btn" class="register-btn"> Register</a></li>
+               
+            </ul>
+        </nav>
+
+    </header>
+
+    
+    <!-- Hero Section -->
+    <section class="hero">
+        <h1>Welcome to LAITI Store</h1>
+        <p>Find the best CCTV cameras here!</p>
+        <a href="#" class="btn">Shop Now</a>
+    </section>
+
+    
+    <!-- Search Box -->
+    <section class="search-section">
+        <input type="text" id="search-box" placeholder="Search for products...">
+        <button id="search-btn">Search</button>
+    </section>
+
+    
+    <!-- Products Section -->
+    <section class="products">
+        <h2>Featured Products</h2>
+        <div class="product-grid" id="product-grid">
+            <!-- Product cards will be generated here -->
+        </div>
+    </section>
+
+    
+    <!-- Product Detail Modal -->
+    <div class="modal" id="product-modal">
+        <div class="modal-content">
+            <span class="close-btn" id="close-modal">&times;</span>
+            <img src="" alt="Product Image" id="modal-img">
+            <h3 id="modal-title">Product Title</h3>
+            <p id="modal-price">$0.00</p>
+            <button class="add-to-cart-modal">Add to Cart</button>
+        </div>
+    </div>
+    
+    <!-- google maps -->
+    <div id="map" style="height: 500px;"></div>
+
+    <!-- google maps -->
+
+
+    <!-- Registration Form -->
+    <section class="form-section hidden" id="form-section">
+        <div class="form-container">
+            <h2>Create Your Account</h2>
+            <form id="signup-form">
+                <div class="form-group">
+                    <label for="full-name">Full Name</label>
+                    <input type="text" id="fullName" name="full-name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" name="password" required>
+                </div>
+                <div class="form-group">
+                    <label for="confirm-password">Confirm Password</label>
+                    <input type="password" id="confirmPassword" name="confirm-password" required>
+                </div>
+                <button type="button" id="submit-btn">Register</button>
+                <button type="button" onclick="cancelRegister()">Cancel</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-logo">
+                <h1>LAITI Site</h1>
+            </div>
+            <nav class="footer-nav">
+                <ul>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms of Service</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+            </nav>
+            <div class="footer-social">
+                <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                <a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; Gilbert @ 2024. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="index1.js"></script>
+</body>
+</html>

@@ -1,0 +1,464 @@
+
+
+body {
+  padding: 0;
+  margin: 0;/* white space btn elements on a webpage */
+  font-family: 'Arial', sans-serif;
+ }
+
+
+nav {
+  height:70px;
+  background:rgba(0, 0, 0);
+  display:flex;
+  align-items:center; 
+  justify-content:space-between;/* property defines how the browser distributes space between and around content items*/
+;/*amount of inner space*/
+ padding:0 30px;
+}
+
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  margin: 0 10px;
+  padding-right:10px;
+}
+
+
+
+nav img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+
+.banner {
+  position: relative;
+  text-align: center;
+  color: #fff;
+  background: linear-gradient(rgba(0, 0, 0, 0.527), rgba(0, 0, 0, 0.5)), url(images/img1.jpg);
+  background-position: center;
+  height: 600px;
+  background-size: cover;
+}
+
+
+.welcome-message {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+
+.welcome-message h1 {
+  font-size: 3em;/* times the size of the current size*/
+  margin-bottom: 10px;
+}
+
+
+.welcome-message p {
+  font-size: 1.5em;
+}
+
+
+.title {
+  text-align: center;
+  color: black;
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+
+.about-section {
+  width: 90%;
+  margin: 0 auto; 
+  overflow: hidden;
+  margin-bottom: 20px;
+  
+}
+
+
+.column {  
+  float:left;
+  width: 50%;
+  box-sizing: border-box;
+  padding: 20px;
+}
+
+
+.left-column {
+  background-color: #000;
+}
+
+
+.right-column {
+  background-color:grey;
+} 
+
+ 
+.columns{
+float:right;
+width:50%;
+box-sizing:border-box;
+padding: 20px;
+}
+
+
+.right-columns{
+
+background-color:#000;
+
+}
+
+
+.left-columns{ 
+
+  background-color:grey;
+}
+
+
+/* Responsive styling for smaller screens */
+@media (max-width: 768px) {
+  .column {
+    width: 100%;
+  }
+}
+
+
+ .footer {
+  background-color:rgba(0, 0, 0);
+  color: #fff;
+  padding: 40px;
+  text-align: center;
+  height:10%;
+  position: relative;
+}
+
+
+.footer .columned {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+
+.footer.column {
+  flex: 1;
+  max-width:300px;
+  text-align: center;
+  margin: 0 20 20px 0;
+  flex:1;
+  max-width:300px;
+  text-align:left;
+  margin: 0 20px 20px 0;
+}
+
+
+.footer a {
+  color: #fff;
+  text-decoration: none;
+  list-style-type: style none;
+}
+
+
+.footer a:hover {
+  text-decoration: underline;
+}
+
+
+/* Quick Links */
+.pages {
+  color: black;
+  line-height: 20px;
+  text-decoration: none;
+  padding: 0;
+  list-style: none;
+}
+
+
+.pages .linkpages {
+  color: white; 
+  text-align: center; 
+  margin-bottom: 10px; 
+  margin-bottom:10px;
+}
+
+
+.pages ul {
+  padding: 0;
+}
+
+
+.pages ul li {
+  margin-bottom: 5px; 
+}
+
+
+.pages ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+
+.pages ul li a:hover {
+  text-decoration: underline;
+}
+
+
+.footer .social-icons a {
+  display: inline-block;
+  margin-right: 15px; 
+  font-size: 1.5em;
+}
+
+
+.login-popup {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding:10px;
+  border: 1px solid #ccc;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+}
+
+
+.close-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+}
+
+
+form {
+  background-color: #c01b1b;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding:10px;
+  border-radius: 5px;
+}
+
+
+label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+}
+
+
+input {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 16px;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+
+button {
+  background-color: #4a4e61;
+  color: #fff;
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+
+button.cancel {
+  background-color: #aaa;
+}
+
+
+.loginContainer {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 20px;
+  background-color: #c01b1b;
+  border: 1px solid #ccc;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+  margin-right:20px;
+}
+
+.close-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+}
+
+
+form {
+  background-color:blue;
+
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding:0;
+  border-radius: 5px;
+}
+
+
+label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+  color: white;
+}
+
+
+input {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 16px;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+button {
+  background-color: #4a4e61;
+  color: #fff;
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer; 
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+
+button.cancel {
+  background-color: #aaa;
+}
+
+
+.video {
+  align-items: center;
+  height:auto;
+  width: 100%;
+  border-radius: 10px;
+  text-align:center;
+}
+
+h1{
+  text-align:center ;
+}
+
+.images{
+  display:flex
+}
+  
+   .imga{
+   margin-right:100px;
+   height:380px;
+   position: relative;
+  
+  }
+
+
+  .imgb{
+    margin-right:100px;
+    height:380px;
+    position: relative;
+  }
+
+
+  imgc{
+    height:380px;
+    position: relative;
+  
+  
+  }
+
+
+  .container{
+    background-color:white ;
+    background-color: grey;
+  }
+
+
+  .brands{
+  text-align:center;
+  font-weight:100px;
+  font-size:30px;
+  }
+
+
+  /*  */
+  .comment-section {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    background-color: #c01b1b;
+    border: 1px solid #ccc;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+  }
+
+
+  
+  .close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+  }
+
+  
+  #feedbackForm {
+    background-color: #c01b1b;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 0;
+    border-radius: 5px;
+  }
+
+
+  
+  #feedbackForm label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+  }
+
+  
+  #feedbackForm input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 16px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+
+  
+  #feedbackForm button {
+    background-color: #4a4e61;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  
+  
+  #feedbackForm #cancelButton {
+    background-color: #aaa;
+  }
+  
